@@ -10,7 +10,7 @@ interface AppHeaderProps {
 
 const AppHeader = ({ drawerOpen, onToggleDrawer }: AppHeaderProps) => {
   const { contactInfo } = useAdmin();
-  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254735893829';
+  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254752254198';
   const location = useLocation();
 
   const drawerLinks = [

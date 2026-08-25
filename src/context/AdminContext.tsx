@@ -110,10 +110,10 @@ const AdminContext = createContext<AdminContextType | undefined>(undefined);
 
 // Default Fallback Data (used only while loading or if DB is empty/error)
 const defaultContactInfo: ContactInfo = {
-  phoneKE: '+254 781 346 337',
-  phoneUG: '+256 747 180 552',
-  phoneRW: '+250 735 589 845',
-  whatsapp: '+254 735 893 829',
+  phoneKE: '+254 752 254 198',
+  phoneUG: '+254 752 254 198',
+  phoneRW: '+254 752 254 198',
+  whatsapp: '+254 752 254 198',
   email: 'info@simbacoach.com',
   addressKE: 'Nairobi, Kenya',
   addressUG: 'Kampala, Uganda',

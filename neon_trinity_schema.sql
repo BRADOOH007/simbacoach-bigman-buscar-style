@@ -84,7 +84,7 @@ CREATE INDEX IF NOT EXISTS idx_simba_bookings_created_at ON simba_bookings(creat
 
 -- Insert default contact info if not exists
 INSERT INTO simba_contact_info (phone_ke, phone_ug, phone_rw, whatsapp, email, address_ke, address_ug)
-SELECT '+254 751 494564', '+256 747 180552', '+250 735 589845', '+254 751 494564', 
+SELECT '+254 752 254 198', '+254 752 254 198', '+254 752 254 198', '+254 752 254 198', 
        'info@simbacoach.com', 'Duruma Road, Nairobi, Kenya', 'Namirembe Road, Bakuli, Kampala'
 WHERE NOT EXISTS (SELECT 1 FROM simba_contact_info LIMIT 1);
 

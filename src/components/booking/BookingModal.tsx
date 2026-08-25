@@ -78,7 +78,7 @@ function currentBookedSeats(time: string, travelDate: string): string[] {
 
 const BookingModal = ({ isOpen, onClose, route, selectedDate, onBookingComplete }: BookingModalProps) => {
   const { addBooking, contactInfo } = useAdmin();
-  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254735893829';
+  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254752254198';
 
   const parsed: ParsedRoute | null = findRoute(route.origin, route.destination);
 

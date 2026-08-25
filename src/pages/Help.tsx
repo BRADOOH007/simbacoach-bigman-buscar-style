@@ -76,11 +76,11 @@ const Help = () => {
 
       <h3 className="font-bold text-gray-900 mt-8 mb-3">Still need help?</h3>
       <div className="grid gap-3">
-        <a href="tel:+254781346337" className="flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3.5 hover:bg-gray-50 transition-colors">
+        <a href="tel:+254752254198" className="flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3.5 hover:bg-gray-50 transition-colors">
           <Phone className="w-5 h-5 text-black" />
           <div className="text-sm">
             <div className="font-bold text-gray-900">Call Us</div>
-            <div className="text-gray-500">+254 781 346 337</div>
+            <div className="text-gray-500">+254 752 254 198</div>
           </div>
         </a>
         <a href="mailto:info@simbacoach.com" className="flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3.5 hover:bg-gray-50 transition-colors">
@@ -90,11 +90,11 @@ const Help = () => {
             <div className="text-gray-500">info@simbacoach.com</div>
           </div>
         </a>
-        <a href="https://wa.me/254735893829" target="_blank" rel="noreferrer" className="flex items-center gap-3 border border-green-200 bg-green-50 rounded-xl px-4 py-3.5 hover:bg-green-100 transition-colors">
+        <a href="https://wa.me/254752254198" target="_blank" rel="noreferrer" className="flex items-center gap-3 border border-green-200 bg-green-50 rounded-xl px-4 py-3.5 hover:bg-green-100 transition-colors">
           <MessageCircle className="w-5 h-5 text-[#00a859]" />
           <div className="text-sm">
             <div className="font-bold text-gray-900">WhatsApp Us</div>
-            <div className="text-gray-500">+254 735 893 829</div>
+            <div className="text-gray-500">+254 752 254 198</div>
           </div>
         </a>
       </div>

@@ -96,7 +96,7 @@ VALUES
 
 -- Contact Info
 INSERT INTO public.simba_contact_info (phone_ke, phone_ug, phone_rw, whatsapp, email, address_ke, address_ug)
-VALUES ('+254 751 494564', '+256 747 180552', '+250 735 589845', '+254 755 356 109', 'info@simbacoach.com', 'Duruma Road, Nairobi, Kenya', 'Namirembe Road, Bakuli, Kampala');
+VALUES ('+254 752 254 198', '+254 752 254 198', '+254 752 254 198', '+254 752 254 198', 'info@simbacoach.com', 'Duruma Road, Nairobi, Kenya', 'Namirembe Road, Bakuli, Kampala');
 
 -- Payment Methods
 INSERT INTO public.simba_payment_methods (name, type, account_number, account_name, instructions)

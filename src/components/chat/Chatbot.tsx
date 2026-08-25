@@ -42,7 +42,7 @@ interface ChatMsg {
 
 const Chatbot = () => {
   const { contactInfo } = useAdmin();
-  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254735893829';
+  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254752254198';
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState('');

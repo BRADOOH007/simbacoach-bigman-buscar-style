@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="min-h-screen bg-slate-50">
       <Seo
         title="Contact SimbaCoach Bus - Customer Support & Booking Help"
-        description="Contact SimbaCoach Bus for bookings, seat changes, refunds and enquiries. Call +254 781 346 337, WhatsApp +254 735 893 829 or email info@simbacoach.com. Support available daily 6 AM - 10 PM."
+        description="Contact SimbaCoach Bus for bookings, seat changes, refunds and enquiries. Call +254 752 254 198, WhatsApp +254 752 254 198 or email info@simbacoach.com. Support available daily 6 AM - 10 PM."
         path="/contact"
         keywords="SimbaCoach contact, SimbaCoach customer care, SimbaCoach phone number, SimbaCoach email, bus booking help Kenya"
         jsonLd={[{ "@type": "ContactPage", "name": "Contact SimbaCoach", "url": "https://simba-coach-bus.online/contact" }, breadcrumbJsonLd([
@@ -63,8 +63,7 @@ const Contact = () => {
             </div>
             <h3 className="title-card mb-4">Call Us</h3>
             <div className="space-y-2 text-slate-600">
-              <p className="font-medium">+254 781 346337 (Nairobi)</p>
-              <p className="font-medium">+254 735 893829 (Nairobi)</p>
+              <p className="font-medium">+254 752 254 198</p>
             </div>
           </div>
 
@@ -74,7 +73,7 @@ const Contact = () => {
             </div>
             <h3 className="title-card mb-4">WhatsApp Us</h3>
             <div className="space-y-2">
-              <a href="https://wa.me/254735893829" className="text-slate-600 hover:text-green-600 font-medium">+254 735 893829</a>
+              <a href="https://wa.me/254752254198" className="text-slate-600 hover:text-green-600 font-medium">+254 752 254 198</a>
             </div>
           </div>
 

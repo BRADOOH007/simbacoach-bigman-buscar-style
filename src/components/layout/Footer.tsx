@@ -5,8 +5,8 @@ import { useAdmin } from '../../context/AdminContext';
 
 const Footer = () => {
   const { contactInfo } = useAdmin();
-  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254735893829';
-  const phone = contactInfo?.phoneKE || '+254 781 346 337';
+  const whatsapp = contactInfo?.whatsapp?.replace(/[^0-9]/g, '') || '254752254198';
+  const phone = contactInfo?.phoneKE || '+254 752 254 198';
   const email = contactInfo?.email || 'info@simbacoach.com';
 
   return (

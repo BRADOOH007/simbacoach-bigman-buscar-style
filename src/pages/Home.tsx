@@ -51,7 +51,7 @@ const PromoCarousel = () => {
             <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent z-20 flex justify-between items-end pb-8">
               <h3 className="text-white font-black text-2xl w-[60%] leading-tight uppercase drop-shadow-lg">{s.label}</h3>
               <a
-                href="https://wa.me/254735893829"
+                href="https://wa.me/254752254198"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-[#e62933] hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-full whitespace-nowrap shadow-lg transition-transform active:scale-95"
@@ -556,7 +556,7 @@ const Home = () => {
           <h3 className="text-white text-xl font-black mb-2">Looking for Online Booking?</h3>
           <p className="text-white/70 text-xs mb-5 max-w-xs mx-auto">Book directly from our website and enjoy up to 25% discount on select routes. Instant confirmation via WhatsApp and SMS.</p>
           <a
-            href="https://wa.me/254735893829"
+            href="https://wa.me/254752254198"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-[#ffb000] hover:bg-amber-500 text-[#1A1A1A] font-extrabold py-3.5 px-8 rounded-full transition-all shadow-lg text-sm"
