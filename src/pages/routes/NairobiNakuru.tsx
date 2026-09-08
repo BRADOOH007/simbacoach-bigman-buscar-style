@@ -3,46 +3,46 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { Clock, MapPin, ChevronRight, Star } from 'lucide-react';
 
-const NairobiKampala = () => {
+const NairobiNakuru = () => {
   const navigate = useNavigate();
 
   const handleBookNow = () => {
-    navigate('/routes', { state: { origin: 'Nairobi', destination: 'Kampala' } });
+    navigate('/routes', { state: { origin: 'Nairobi', destination: 'Nakuru' } });
   };
 
   const faqs = [
     {
-      q: 'How long is the Nairobi to Kampala bus journey?',
-      a: 'The Nairobi to Kampala bus journey takes approximately 10–12 hours depending on border crossing times at Busia or Malaba.',
+      q: 'How long is the Nairobi to Nakuru bus journey?',
+      a: 'The journey takes approximately 3 hours via the Nairobi–Nakuru highway, one of the fastest and smoothest bus routes in Kenya.',
     },
     {
-      q: 'What is the price of a Nairobi to Kampala bus ticket?',
-      a: 'SimbaCoach bus tickets from Nairobi to Kampala start from KSh 3,500 for standard class and KSh 5,000 for VIP.',
+      q: 'What is the price of a Nairobi to Nakuru bus ticket?',
+      a: 'SimbaCoach tickets from Nairobi to Nakuru start from KES 600 for standard, KES 800 for executive and KES 1,000 for VIP seats.',
     },
     {
-      q: 'What time does the Nairobi to Kampala bus depart?',
-      a: 'SimbaCoach operates daily departures from Nairobi to Kampala. The main departure is at 7:00 AM from our Duruma Road terminal.',
+      q: 'What time does the Nairobi to Nakuru bus depart?',
+      a: 'We operate multiple daily departures from our Duruma Road terminal in Nairobi, with the first bus leaving at 8:00 AM.',
     },
     {
-      q: 'Where does the bus drop off in Kampala?',
-      a: 'Our buses arrive at the SimbaCoach Kampala terminal on Namirembe Road, Bakuli — centrally located and easily accessible.',
+      q: 'Where does the bus drop off in Nakuru?',
+      a: 'Buses arrive at the SimbaCoach Nakuru terminal near the town centre, close to hotels and the Nakuru CBD.',
     },
     {
-      q: 'Can I book a Nairobi to Kampala bus ticket online?',
-      a: 'Yes. You can book your seat directly on this website. Select your date, choose your seat, and pay via M-Pesa or card. Instant confirmation.',
+      q: 'Can I book a Nairobi to Nakuru ticket online?',
+      a: 'Yes. Book your seat on this website by selecting your date and seat class, then pay via M-Pesa or card for instant confirmation.',
     },
   ];
 
   return (
     <div className="bg-gray-50 min-h-screen">
       <Helmet>
-        <title>Nairobi to Kampala Bus | Daily Departures | Book Online - SimbaCoach</title>
-        <meta name="description" content="Book Nairobi to Kampala bus tickets online with SimbaCoach. Daily departures, comfortable seats, affordable prices from KSh 3,500. Instant confirmation." />
-        <meta name="keywords" content="Nairobi to Kampala bus, Nairobi Kampala bus ticket, Nairobi to Kampala bus price, SimbaCoach Nairobi Kampala, bus from Nairobi to Kampala, Kampala bus booking" />
-        <link rel="canonical" href="https://simba-coach-bus.online/routes/nairobi-kampala" />
-        <meta property="og:title" content="Nairobi to Kampala Bus | Daily Departures | SimbaCoach" />
-        <meta property="og:description" content="Book Nairobi to Kampala bus tickets online. Daily departures from KSh 3,500. Safe, comfortable, and reliable." />
-        <meta property="og:url" content="https://simba-coach-bus.online/routes/nairobi-kampala" />
+        <title>Nairobi to Nakuru Bus | Daily Departures from KES 600 | Book Online - SimbaCoach</title>
+        <meta name="description" content="Book Nairobi to Nakuru bus tickets online with SimbaCoach. Frequent daily departures in about 3 hours from KES 600. Instant M-Pesa confirmation." />
+        <meta name="keywords" content="Nairobi to Nakuru bus, Nairobi Nakuru bus price, bus from Nairobi to Nakuru, Nakuru bus fare, SimbaCoach Nairobi Nakuru, Rift Valley bus" />
+        <link rel="canonical" href="https://simba-coach-bus.online/routes/nairobi-nakuru" />
+        <meta property="og:title" content="Nairobi to Nakuru Bus | Daily Departures from KES 600 | SimbaCoach" />
+        <meta property="og:description" content="Book Nairobi to Nakuru bus tickets online. Frequent departures in about 3 hours from KES 600." />
+        <meta property="og:url" content="https://simba-coach-bus.online/routes/nairobi-nakuru" />
         <meta property="og:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
@@ -52,8 +52,8 @@ const NairobiKampala = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="SimbaCoach" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Nairobi to Kampala Bus | Daily Departures | SimbaCoach" />
-        <meta name="twitter:description" content="Book Nairobi to Kampala bus tickets online. Daily departures from KSh 3,500. Safe, comfortable, and reliable." />
+        <meta name="twitter:title" content="Nairobi to Nakuru Bus | Daily Departures from KES 600 | SimbaCoach" />
+        <meta name="twitter:description" content="Book Nairobi to Nakuru bus tickets online. Frequent departures in about 3 hours from KES 600." />
         <meta name="twitter:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -67,12 +67,12 @@ const NairobiKampala = () => {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BusTrip",
-          "name": "Nairobi to Kampala Bus",
+          "name": "Nairobi to Nakuru Bus",
           "provider": { "@type": "Organization", "name": "SimbaCoach Bus", "url": "https://simba-coach-bus.online" },
           "departureBusStop": { "@type": "BusStop", "name": "Nairobi Terminal, Duruma Road", "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" } },
-          "arrivalBusStop": { "@type": "BusStop", "name": "Kampala Terminal, Namirembe Road", "address": { "@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG" } },
-          "departureTime": "07:00",
-          "offers": { "@type": "Offer", "price": "3500", "priceCurrency": "KES", "availability": "https://schema.org/InStock" }
+          "arrivalBusStop": { "@type": "BusStop", "name": "Nakuru Terminal", "address": { "@type": "PostalAddress", "addressLocality": "Nakuru", "addressCountry": "KE" } },
+          "departureTime": "08:00",
+          "offers": { "@type": "Offer", "price": "600", "priceCurrency": "KES", "availability": "https://schema.org/InStock" }
         })}</script>
       </Helmet>
 
@@ -84,14 +84,14 @@ const NairobiKampala = () => {
             <ChevronRight className="w-4 h-4" />
             <Link to="/routes" className="hover:text-white">Routes</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Nairobi → Kampala</span>
+            <span className="text-white">Nairobi → Nakuru</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nairobi to Kampala Bus</h1>
-          <p className="text-xl text-blue-200 max-w-2xl">Daily direct bus service from Nairobi, Kenya to Kampala, Uganda. Comfortable seats, affordable prices, and on-time departures.</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nairobi to Nakuru Bus</h1>
+          <p className="text-xl text-blue-200 max-w-2xl">Frequent daily buses between Nairobi and Nakuru in about 3 hours, from KES 600.</p>
           <div className="flex flex-wrap gap-6 mt-8 text-sm">
-            <div className="flex items-center gap-2"><Clock className="w-4 h-4 text-orange-400" /><span>~10–12 hours</span></div>
-            <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange-400" /><span>Duruma Rd, Nairobi → Namirembe Rd, Kampala</span></div>
-            <div className="flex items-center gap-2"><Star className="w-4 h-4 text-orange-400 fill-orange-400" /><span>4.8/5 rated route</span></div>
+            <div className="flex items-center gap-2"><Clock className="w-4 h-4 text-orange-400" /><span>~3 hours</span></div>
+            <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange-400" /><span>Duruma Rd, Nairobi → Nakuru town centre</span></div>
+            <div className="flex items-center gap-2"><Star className="w-4 h-4 text-orange-400 fill-orange-400" /><span>2,000+ passengers monthly</span></div>
           </div>
         </div>
       </div>
@@ -102,8 +102,8 @@ const NairobiKampala = () => {
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-gray-500 text-sm uppercase font-semibold mb-1">Starting from</p>
-            <p className="text-4xl font-extrabold text-[#1E3A8A]">KSh 3,500</p>
-            <p className="text-orange-600 font-semibold text-sm mt-1">VIP: KSh 5,000</p>
+            <p className="text-4xl font-extrabold text-[#1E3A8A]">KES 600</p>
+            <p className="text-orange-600 font-semibold text-sm mt-1">Executive: KES 800 · VIP: KES 1,000</p>
           </div>
           <button onClick={handleBookNow} className="px-10 py-4 bg-gradient-to-r from-[#F97316] to-[#FB923C] text-white font-bold rounded-xl shadow-lg hover:shadow-orange-400/40 transition-all text-lg">
             Book Your Seat Now
@@ -114,18 +114,18 @@ const NairobiKampala = () => {
         <div className="bg-white rounded-2xl shadow-sm p-8 mb-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Route</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            The <strong>Nairobi to Kampala bus</strong> is one of SimbaCoach's most popular international routes. Departing daily from our Duruma Road terminal in Nairobi, our buses travel through the scenic Rift Valley, crossing into Uganda at the Busia or Malaba border before arriving in Kampala's city centre.
+            The <strong>Nairobi to Nakuru bus</strong> is one of the most frequent intercity services in the Rift Valley. Nakuru is a bustling commercial and administrative hub, and the gateway to Lake Nakuru National Park and the flamingos, making the route equally popular with commuters and visitors.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            All buses on this route are air-conditioned with reclining seats, USB charging ports, and onboard entertainment. Our professional drivers ensure a safe and punctual journey every time.
+            Thanks to the modern Nairobi–Nakuru highway, the ride takes about three hours with smooth tarmac for the entire journey. Our coaches include standard, executive and VIP seating with air conditioning and USB charging.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {[
-              { label: 'Departure', value: '7:00 AM Daily' },
-              { label: 'Duration', value: '10–12 Hours' },
-              { label: 'Standard', value: 'KSh 3,500' },
-              { label: 'VIP', value: 'KSh 5,000' },
+              { label: 'First Departure', value: '8:00 AM' },
+              { label: 'Duration', value: '3 Hours' },
+              { label: 'Standard', value: 'KES 600' },
+              { label: 'VIP', value: 'KES 1,000' },
             ].map((item) => (
               <div key={item.label} className="bg-gray-50 rounded-xl p-4 text-center">
                 <p className="text-xs text-gray-500 uppercase font-semibold mb-1">{item.label}</p>
@@ -153,9 +153,9 @@ const NairobiKampala = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Other Popular Routes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { label: 'Nairobi → Kigali', to: '/routes/nairobi-kigali' },
-              { label: 'Nairobi → Juba', to: '/routes/nairobi-juba' },
-              { label: 'Nairobi → Dar es Salaam', to: '/routes/nairobi-dar-es-salaam' },
+              { label: 'Nairobi → Kisumu', to: '/routes/nairobi-kisumu' },
+              { label: 'Nairobi → Eldoret', to: '/routes/nairobi-eldoret' },
+              { label: 'Nairobi → Kampala', to: '/routes/nairobi-kampala' },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:border-[#1E3A8A] hover:bg-blue-50 transition-all group">
                 <span className="font-semibold text-gray-700 group-hover:text-[#1E3A8A]">{r.label}</span>
@@ -170,5 +170,4 @@ const NairobiKampala = () => {
   );
 };
 
-export default NairobiKampala;
-
+export default NairobiNakuru;

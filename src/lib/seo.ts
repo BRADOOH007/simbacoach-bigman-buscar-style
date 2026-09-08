@@ -12,7 +12,17 @@ export const SITE = {
     addressLocality: 'Nairobi',
     addressCountry: 'KE',
   },
-  sameAs: [],
+  sameAs: [
+    'https://www.facebook.com/SimbaCoach',
+    'https://twitter.com/SimbaCoachKE',
+    'https://www.instagram.com/simbacoach',
+    'https://wa.me/254752254198',
+  ],
+  geo: {
+    region: 'KE',
+    placename: 'Nairobi',
+    position: '-1.2921;36.8219',
+  },
 };
 
 export const pushJsonLd = (...objects: object[]) => objects.map((o) => ({

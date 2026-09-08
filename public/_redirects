@@ -1,1 +1,10 @@
+# Normalize all sitemap URL variants to the real XML file (GSC must never get the HTML SPA shell)
+/sitemap.xml/  /sitemap.xml  301
+/sitemap.xml.gz  /sitemap.xml  301
+/sitemap_index.xml  /sitemap.xml  301
+/sitemap-index.xml  /sitemap.xml  301
+/sitemap  /sitemap.xml  301
+/sitemap/  /sitemap.xml  301
+
+# SPA fallback for unmatched client-side routes
 /* /index.html 200

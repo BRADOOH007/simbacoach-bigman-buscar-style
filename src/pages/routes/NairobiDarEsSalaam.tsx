@@ -45,8 +45,15 @@ const NairobiDarEsSalaam = () => {
         <meta property="og:url" content="https://simba-coach-bus.online/routes/nairobi-dar-es-salaam" />
         <meta property="og:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SimbaCoach" />
+        <meta property="og:locale" content="en_KE" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="SimbaCoach" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nairobi to Dar es Salaam Bus | Book Online - SimbaCoach" />
+        <meta name="twitter:description" content="Book Nairobi to Dar es Salaam bus tickets online. Daily departures from KSh 4,500. Safe and comfortable." />
         <meta name="twitter:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

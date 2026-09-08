@@ -26,7 +26,7 @@ const About = () => {
         keywords="SimbaCoach about, SimbaCoach bus company, East Africa bus company, Kenya bus operator, premium bus Kenya"
         jsonLd={[{ "@type": "AboutPage", "name": "About SimbaCoach Bus", "url": "https://simba-coach-bus.online/about" }, breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'About' }
+          { name: 'About', path: '/about' }
         ])]}
       />
       {/* Hero */}

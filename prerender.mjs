@@ -18,6 +18,10 @@ const routes = [
   '/routes/nairobi-kigali',
   '/routes/nairobi-juba',
   '/routes/nairobi-dar-es-salaam',
+  '/routes/nairobi-mombasa',
+  '/routes/nairobi-kisumu',
+  '/routes/nairobi-nakuru',
+  '/routes/nairobi-eldoret',
   '/about',
   '/contact',
   '/fleet',
@@ -32,6 +36,7 @@ const routes = [
   '/blog/eldoret-to-kigali-bus-travel-guide',
   '/blog/nakuru-to-kampala-bus-travel-guide',
   '/blog/simba-bus-review',
+  '/blog/how-to-book-bus-tickets-online-in-kenya',
   '/privacy-policy',
   '/terms',
 ];

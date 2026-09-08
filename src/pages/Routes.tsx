@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Clock, Search, Calendar, Bus } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import Seo from '../components/seo/Seo';
 import BookingModal from '../components/booking/BookingModal';
 import ReturnTripModal from '../components/booking/ReturnTripModal';
 import { useAdmin } from '../context/AdminContext';
+import { simbaRoutes } from '../data/simbaRoutes';
 
 const RoutesPage = () => {
   const { routes } = useAdmin();
@@ -30,6 +31,40 @@ const RoutesPage = () => {
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   };
+
+  // Static fare data rendered in HTML for search engines (independent of async state)
+  const staticRoutes = useMemo(() => simbaRoutes, []);
+
+  const seoFaqs = [
+    {
+      q: 'How much is a Nairobi to Mombasa bus ticket?',
+      a: 'A SimbaCoach Nairobi to Mombasa bus ticket starts from KES 1,300. The journey takes about 9–11 hours with multiple daily departures.',
+    },
+    {
+      q: 'How much is a Nairobi to Kampala bus ticket?',
+      a: 'A SimbaCoach Nairobi to Kampala bus ticket starts from KES 3,500 for standard class and KES 4,500 for VIP. The journey takes about 12 hours.',
+    },
+    {
+      q: 'How much is a Nairobi to Kisumu bus ticket?',
+      a: 'A SimbaCoach Nairobi to Kisumu bus ticket starts from KES 1,200 for standard, KES 1,500 for executive and KES 1,800 for VIP. The journey takes about 6–7 hours.',
+    },
+    {
+      q: 'How much is a Nairobi to Kigali bus ticket?',
+      a: 'A SimbaCoach Nairobi to Kigali bus ticket starts from KES 6,000 for standard, KES 6,500 for executive and KES 7,000 for VIP. The journey takes about 18–20 hours.',
+    },
+    {
+      q: 'How much is a Nairobi to Juba bus ticket?',
+      a: 'A SimbaCoach Nairobi to Juba bus ticket starts from KES 7,000 for standard, KES 7,500 for executive and KES 8,000 for VIP. The journey takes about 18–20 hours.',
+    },
+    {
+      q: 'How much is a Nairobi to Eldoret bus ticket?',
+      a: 'A SimbaCoach Nairobi to Eldoret bus ticket starts from KES 1,000 for standard, KES 1,300 for executive and KES 1,500 for VIP. The journey takes about 5–6 hours.',
+    },
+    {
+      q: 'What payment methods does SimbaCoach accept?',
+      a: 'SimbaCoach accepts M-Pesa, Airtel Money, and card payments. Your ticket is confirmed instantly after payment.',
+    },
+  ];
 
   useEffect(() => {
     if (routes.length > 0) {
@@ -119,6 +154,14 @@ const RoutesPage = () => {
         description="Explore SimbaCoach bus routes and fares across Kenya and East Africa. Daily departures from Nairobi, Mombasa, Eldoret, Kisumu to Kampala, Kigali & more. Book online with instant confirmation."
         path="/routes"
         keywords="SimbaCoach routes, bus fares Kenya, Kenya bus routes, Nairobi to Mombasa bus price, East Africa bus routes, book bus online"
+        jsonLd={[{
+          "@type": "FAQPage",
+          "mainEntity": seoFaqs.map(f => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a }
+          }))
+        }]}
       />
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-600 to-secondary-600 py-20 text-white">
@@ -130,7 +173,49 @@ const RoutesPage = () => {
         </div>
       </section>
 
-      {/* Filters banner */}
+      {/* SEO: Full fare table (always rendered in HTML for search engines) */}
+      <section className="container-wide py-10" aria-label="Bus routes and fares">
+        <div className="bg-white rounded-2xl shadow-elevation-1 p-6 md:p-10 border border-slate-100">
+          <h2 className="title-section text-slate-900 mb-2">SimbaCoach Bus Routes &amp; Fares 2025</h2>
+          <p className="text-slate-600 mb-8">
+            Book bus tickets online from Nairobi, Mombasa, Kisumu, Eldoret, Nakuru and Kitale across Kenya, Uganda,
+            Rwanda, Tanzania and South Sudan. Fares below are starting prices per person. All departures daily.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm md:text-base">
+              <thead>
+                <tr className="bg-primary-50 text-primary-800">
+                  <th className="text-left p-3 font-bold rounded-l-xl">From</th>
+                  <th className="text-left p-3 font-bold">To</th>
+                  <th className="text-left p-3 font-bold">Standard</th>
+                  <th className="text-left p-3 font-bold">Executive</th>
+                  <th className="text-left p-3 font-bold">VIP</th>
+                  <th className="text-left p-3 font-bold rounded-r-xl">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                {staticRoutes.slice(0, 60).map((r) => (
+                  <tr key={r.id} className="border-b border-slate-100 hover:bg-slate-50">
+                    <td className="p-3 font-semibold text-slate-800">{r.origin}</td>
+                    <td className="p-3 font-semibold text-slate-800">{r.destination}</td>
+                    <td className="p-3 text-slate-600">{r.price}</td>
+                    <td className="p-3 text-slate-600">{r.executive_price}</td>
+                    <td className="p-3 text-slate-600">{r.vip_price}</td>
+                    <td className="p-3 text-slate-600 whitespace-nowrap">{r.duration}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-6 text-sm text-slate-500">
+            Fares may vary based on travel date and season. Book online for instant confirmation — pay via M-Pesa,
+            Airtel Money or card. For assistance call +254 752 254 198 or WhatsApp +254 752 254 198.
+          </p>
+        </div>
+      </section>
+
       {searchParams && (
         <div className="container-wide py-6">
           <div className="flex items-center justify-between bg-white rounded-2xl shadow-elevation-1 p-6 border border-slate-100">

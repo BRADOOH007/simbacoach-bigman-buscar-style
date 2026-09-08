@@ -41,7 +41,7 @@ const Contact = () => {
         keywords="SimbaCoach contact, SimbaCoach customer care, SimbaCoach phone number, SimbaCoach email, bus booking help Kenya"
         jsonLd={[{ "@type": "ContactPage", "name": "Contact SimbaCoach", "url": "https://simba-coach-bus.online/contact" }, breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'Contact' }
+          { name: 'Contact', path: '/contact' }
         ])]}
       />
       {/* Hero */}

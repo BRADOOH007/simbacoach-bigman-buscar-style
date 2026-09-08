@@ -18,6 +18,10 @@ import NairobiKampala from './pages/routes/NairobiKampala';
 import NairobiKigali from './pages/routes/NairobiKigali';
 import NairobiJuba from './pages/routes/NairobiJuba';
 import NairobiDarEsSalaam from './pages/routes/NairobiDarEsSalaam';
+import NairobiMombasa from './pages/routes/NairobiMombasa';
+import NairobiKisumu from './pages/routes/NairobiKisumu';
+import NairobiNakuru from './pages/routes/NairobiNakuru';
+import NairobiEldoret from './pages/routes/NairobiEldoret';
 import NairobiKampalaTravelGuide from './pages/blog/NairobiKampalaTravelGuide';
 import NairobiKigaliTravelGuide from './pages/blog/NairobiKigaliTravelGuide';
 import NairobiJubaTravelGuide from './pages/blog/NairobiJubaTravelGuide';
@@ -28,6 +32,7 @@ import EldoretKampalaTravelGuide from './pages/blog/EldoretKampalaTravelGuide';
 import EldoretKigaliTravelGuide from './pages/blog/EldoretKigaliTravelGuide';
 import NakuruKampalaTravelGuide from './pages/blog/NakuruKampalaTravelGuide';
 import SimbaCoachReview from './pages/blog/SimbaCoachReview';
+import HowToBookBusOnlineKenya from './pages/blog/HowToBookBusOnlineKenya';
 
 function AppRoutes() {
   return (
@@ -41,6 +46,10 @@ function AppRoutes() {
           <Route path="routes/nairobi-kigali" element={<NairobiKigali />} />
           <Route path="routes/nairobi-juba" element={<NairobiJuba />} />
           <Route path="routes/nairobi-dar-es-salaam" element={<NairobiDarEsSalaam />} />
+          <Route path="routes/nairobi-mombasa" element={<NairobiMombasa />} />
+          <Route path="routes/nairobi-kisumu" element={<NairobiKisumu />} />
+          <Route path="routes/nairobi-nakuru" element={<NairobiNakuru />} />
+          <Route path="routes/nairobi-eldoret" element={<NairobiEldoret />} />
           <Route path="blog/nairobi-to-kampala-bus-travel-guide" element={<NairobiKampalaTravelGuide />} />
           <Route path="blog/nairobi-to-kigali-bus-travel-guide" element={<NairobiKigaliTravelGuide />} />
           <Route path="blog/nairobi-to-juba-bus-travel-guide" element={<NairobiJubaTravelGuide />} />
@@ -51,6 +60,7 @@ function AppRoutes() {
           <Route path="blog/eldoret-to-kigali-bus-travel-guide" element={<EldoretKigaliTravelGuide />} />
           <Route path="blog/nakuru-to-kampala-bus-travel-guide" element={<NakuruKampalaTravelGuide />} />
           <Route path="blog/simba-bus-review" element={<SimbaCoachReview />} />
+          <Route path="blog/how-to-book-bus-tickets-online-in-kenya" element={<HowToBookBusOnlineKenya />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="fleet" element={<Fleet />} />

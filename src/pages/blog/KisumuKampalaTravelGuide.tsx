@@ -28,7 +28,13 @@ const KisumuKampalaTravelGuide = () => {
         <meta property="og:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:site_name" content="SimbaCoach" />
+        <meta property="og:locale" content="en_KE" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="SimbaCoach" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kisumu to Kampala Bus: Complete 2025 Travel Guide" />
+        <meta name="twitter:description" content="Prices, schedules, Busia border tips, and how to book your Kisumu to Kampala bus ticket online in 2025." />
         <meta name="twitter:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta property="article:published_time" content={publishDate} />
         <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "Article", "headline": "Kisumu to Kampala Bus: Complete 2025 Travel Guide", "datePublished": publishDate, "dateModified": publishDate, "author": { "@type": "Organization", "name": "SimbaCoach Bus" }, "publisher": { "@type": "Organization", "name": "SimbaCoach Bus", "logo": { "@type": "ImageObject", "url": "https://simba-coach-bus.online/assets/logo.webp" } }, "mainEntityOfPage": { "@type": "WebPage", "@id": "https://simba-coach-bus.online/blog/kisumu-to-kampala-bus-travel-guide" } })}</script>

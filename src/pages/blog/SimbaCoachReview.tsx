@@ -63,7 +63,13 @@ const SimbaCoachReview = () => {
         <meta property="og:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:site_name" content="SimbaCoach" />
+        <meta property="og:locale" content="en_KE" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="SimbaCoach" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SimbaCoach Bus Review 2025: Is It the Best Bus from Nairobi?" />
+        <meta name="twitter:description" content="Comfort, prices, punctuality, and online booking — a full review of SimbaCoach Bus in 2025." />
         <meta name="twitter:image" content="https://simba-coach-bus.online/assets/simba-hero.webp" />
         <meta property="article:published_time" content={publishDate} />
         <meta property="article:modified_time" content={modifiedDate} />
